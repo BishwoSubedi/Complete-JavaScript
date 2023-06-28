@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>try-catch-finally keyword Examples</h2>
+    Enter the Number between 2 to 10: <input type="text" placeholder="Number between 5 and 10 " id="id1">
+    <input type="button" value="Validate" onclick="OnClick()">
+    <p id="message"></p>
+    <p id="input1"></p>
+    <script>
+        //code inside the finally keyword should execute wheather there is error or not
+        function OnClick() {
+            var input = document.getElementById("input1");
+            var mes = document.getElementById('message')
+            mes.innerHTML = ""
+            try {
+                var x = document.getElementById("id1").value;
+                if (x == "") throw "Empty";
+                if (isNaN(x)) throw "is Not a number"
+                if (x > 10) throw "Please Enter a number less than 10";
+                if (x < 2) throw "Please Enter a Nummber greater than 2";
+
+            } catch (error) {
+                mes.innerHTML = "Input " + error;
+            }
+            finally {
+                input.innerHTML = "Input Value : " +x;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

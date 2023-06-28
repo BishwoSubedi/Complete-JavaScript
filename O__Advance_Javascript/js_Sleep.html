@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Sleep Mehtod</h1>
+    <script>
+        function sleep(milliseconds) {
+            return new Promise(resolve => setTimeout(resolve, milliseconds))
+        }
+        async function Example() {
+            document.writeln('Please Wait for 2 sec after every statement displayed')
+            for (let i = 1; i < 6; i++) {
+                await sleep(2000)
+                switch (i) {
+                    case 1:
+                        document.writeln(i + ".Let's Learn JavaScript Together. <br>")
+                        break;
+                    case 2:
+                        document.writeln(i + ".We are Here to learn Something new <br>")
+                        break;
+                    case 3:
+                        document.writeln(i + ".Unity is powerful<br>")
+                        break;
+                    case 4:
+                        document.writeln(i + ".We must pass on the knowledge we have to everyone <br>")
+                        break;
+                    case 5:
+                        document.writeln(i + ".All We must rise together <br>")
+                        break;
+                    default: document.writeln('something wrong')
+                }
+
+            }
+        }
+        Example()
+    </script>
+</body>
+
+</html>

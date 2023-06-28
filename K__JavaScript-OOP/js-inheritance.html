@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>This is JavaScript Inheritance</h3>
+    <script>
+        //simply inheritance means accessing the property of another class in current class.
+        //it provides flexibility to the child class to use the methods and variables of parent class.
+        //we use extends keyword
+        //it maintains Is-A relationship
+        class present extends Date{
+            constructor(){
+                super();
+            }
+        }
+        var pr=new present;
+        document.writeln("Present Date Is: <br>")
+         document.writeln(pr.getDate()+"-"+(pr.getMonth()+1)+"-"+pr.getFullYear())        
+    </script>
+</body>
+</html>

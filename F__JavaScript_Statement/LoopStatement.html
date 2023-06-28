@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    //for,while,do-while,for-in,for-of
+    //For loop
+    for(i=0;i<5;i++){
+        document.writeln(i);
+    }
+
+    document.write("<br>")
+    //while loop
+    var i=1;
+    while(i<7){
+    document.writeln(i);
+    i++;
+    }
+    document.write("<br>")
+
+    //Do while loop
+    do {
+      document.writeln(i);
+      i++;
+    } while (i<2);
+
+    document.write("<br>")
+
+    // for-in loop-mainly used for objects
+    var person={fname:"Bishwo",lname:"Subedi",age:20};
+    var txt=""
+    document.write(txt);
+
+     for (  key in person) {
+      txt +=person[key]+" ";
+      }
+      document.writeln(txt);
+
+      document.write("<br>")
+
+      // for of loop-mainly used for arrays
+      // for of loops through iterable objects
+  var alpha=["A","B","C","D"]
+  for(x of alpha){
+    document.writeln(x);
+  }
+     
+  </script>
+</body>
+</html>

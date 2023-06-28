@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Array Method
+      // 1.concat()
+      // 2.copywithin()
+      // 3.entries()
+      // 4.flat()-it converts multidimension array into single valued array
+      // 5.flatmap()--it converts multidimension array into single valued array with some extra condition
+      //6.every()-check condition and returns boolean value
+      //7.fill()-fills element into arry with static values
+      //8.from()-it creates new array carrying exact copy of another array
+      //9.filter()-it returns the new array containing the element pass the provided function condition
+      //10.find()
+      //11.forEach()-it invokes the provided function once for every element in array
+      //12.includes()-it checks wheather the specified element belongs to array or not and return the value in boolean form
+      //13.join()-it joins the elements of an array as an string
+      //14.keys()-it returns the values of key attached to every array
+      //15.map()-it calls the specified function for every array element and returns the new array(very useful)
+      //16.pop()-it removes last element of array
+      //17.push()-it adds elements to the end of elements
+      //18.reverse()-it reverse the array element
+      //19.of()-document.write(Array.of(1,2,3,4))-it generate new array given as parameter
+      //20.slice()-it returns the new array containing the part of copy of given array
+      //21.sort()-it sorts the array element in order
+      //22.toString()-it converts the element of a specified array into string form,without affecting the original array
+      //23.toLocalestring()-it returns a string containing all element of specified array
+      //24.splice()-it add or remove element in current array
+      
+      var ar = ["C", "C++", "HTML"];
+      var arr = ["Python", "JAVA"];
+      var arr1 = [20, 40, [50, 60]];
+      document.writeln("<h3> Array Method flat(): </h3>");
+      var flatArray = arr1.flat();
+      document.writeln("Flat Array:" + flatArray);
+      document.write("<br>");
+      document.writeln("<h3> Array Method fill(): </h3>");
+      var Fillarray = ar.fill("hello", 0, 1);
+      document.writeln("Flat Array:" + Fillarray);
+
+      document.write("<br>");
+      document.writeln("<h3> Array Method from(): </h3>");
+      var fromArr = Array.from("Hello");
+      document.writeln(fromArr);
+
+      document.write("<br>");
+      document.writeln("<h3> Array Method filter(): </h3>");
+      var nums = [1, 30, 40, 50, 90];
+      function check(value) {
+        return value > 30;
+      }
+      document.writeln(nums.filter(check));
+
+      document.write("<br>");
+      document.writeln("<h3> Array Method find(): </h3>");
+      var nums = [1, 30, 40, 50, 90];
+      document.writeln(nums.find((x) => x > 10));
+
+      document.write("<br>");
+      document.writeln("<h3> Array Method forEach(): </h3>");
+      var nums = [1, 30, 40, 50, 90];
+      nums.forEach((element) => {
+        document.writeln(element + 2);
+      });
+      document.write("<br>");
+      document.writeln("<h3> Array Method join(): </h3>");
+      var arr2=["Bishwo","Html","CSS"]
+      document.writeln('Array after join Method :' +arr2.join('-'));
+
+      document.write("<br>");
+      document.writeln("<h3> Array Method keys(): </h3>");
+      var keyArray=ar.keys();
+      document.writeln(keyArray +"<br>")
+      for (k of keyArray){
+        document.writeln(k)
+      }
+      document.write("<br>");
+      document.writeln("<h3> Array Method map(): </h3>");
+      var arr4=[40,35,25,15,20]
+      var mapArray=arr4.map(x=>x/5);
+      document.writeln(mapArray);
+
+      document.write("<br>");
+      document.writeln("<h3> Array Method pop(): </h3>");
+      var arr5=[40,35,25,15,20]
+      arr5.pop();//it will remove last element
+      arr5.push(5,4)//adding element
+  document.writeln('remove 20 using pop');
+  document.writeln(arr5);
+
+  document.write("<br>");
+      document.writeln("<h3> Array Method slice(): </h3>");
+      var arr6=[40,35,25,15,20,70,80,9,8,2,3,5,0]
+     var SliceArray=arr6.slice(2,6)
+      document.writeln(SliceArray);
+
+  document.write("<br>");
+      document.writeln("<h3> Array Method sort(): </h3>");
+      var arr7=[40,35,25,15,20,70,80,9,8,2,3,5,0]
+      var lang=['JAVA','C','C++','HTML','CSS','JAVASCRIPT']
+      document.writeln(" sorted number are " +arr7.sort());
+      document.writeln(" sorted language are " +lang.sort());
+
+  document.write("<br>");
+      document.writeln("<h3> Array Method toLocaleString(): </h3>");
+      var lan=['JAVA','C','C++',3,4,'CSS','JAVASCRIPT']
+      var str=lan.toLocaleString();
+      document.writeln(str);
+
+  document.write("<br>");
+      document.writeln("<h3> Array Method toString(): </h3>");
+      var lang=['JAVA','C','C++','HTML','CSS','JAVASCRIPT'];
+      var strng=lang.toString();
+      document.writeln(strng);
+
+    </script>
+  </body>
+</html>

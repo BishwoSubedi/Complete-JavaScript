@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Promises </h2>
+    <p> Result will be displayed after 2 sec</p>
+    <p id="result"></p>
+    <script>
+        //a promise is a special javascript object that links the 'producing code' and 'consuming' code together
+        // function Display(demo){
+        //     document.getElementById('result').innerHTML=demo;
+        // }
+        // let promise=new Promise(function(myReslove,myReject){
+        //     let x=1;
+        //    if(x==1){
+        //     myReslove('Ok')
+        //    }
+        //    else{
+        //     myReject('Error')
+        //    }
+        // });
+        // promise.then(
+        //     function(value) {Display(value);},
+        //     function (error){Display(error);}
+        // )
+        setTimeout(function() {
+            myFunction('Welcome User')//THIS is callback function in which one function is called from another function.
+        }, 2000);
+        function myFunction(value){
+            document.getElementById("result").innerHTML=value;
+        }
+
+
+        //NOTE:Error Handling is not possible in callback function but error handling is possible in promises
+    </script>
+</body>
+</html>

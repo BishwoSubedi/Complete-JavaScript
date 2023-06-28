@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h3>JavaScript Polymorphism</h3>
+    <script>
+      //Polymorphism is a core concept of object oriented paradigm that provides way to perform single action in different form.
+      //It provides an ability to call the same method on different javascript object.
+      class A {
+        show() {
+          document.writeln("Class A is invoked");
+        }
+      }
+      class B extends A {
+        show() {
+          document.writeln("Class B is invoked");
+        }
+      }
+      var a = [new A(), new B()];
+      a.forEach((msg) => {
+        msg.show(); //in this example we call the same function but it shows us different message on the screen which is the best example of polymorphism
+        document.writeln("<br>");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Js Callback</h1>
+    <script>
+        //A callback function can be defined as a function passed into another function as parameter.
+        //Simply it is function passed to another funtion as an argument
+        //Callbacks are mainly used to handle asynchronous operatons
+        function getData(x,y,callback){
+            document.writeln('Multiplication is: '+(x*y)+"<br>")
+            callback();
+        }
+        function showdata(){
+            document.writeln('This is the statement through the call back Funtction')
+        }
+        getData(10,20,showdata)
+
+        document.writeln("<br> <br>")
+        document.writeln("<h3>Another Example</h3>")
+    function putData(Back)
+    {
+        var name=prompt('Please Enter Your Name : ')
+        var age=prompt('Please Enter Your Age: ')
+        Back(name,age)
+    }
+    function Display(name,age){
+        document.writeln("Name :"+name+"<br>Age:"+age)
+    }
+    putData(Display)
+    </script>
+</body>
+</html>

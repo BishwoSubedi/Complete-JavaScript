@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ObJECT BY OBJECT LITERAL
+        var person={
+          fname:'Bishwo',
+          lname:'Subedi',
+          age:25
+        }
+        document.writeln(person.fname+" "+person.lname)
+        document.write("<br>")
+
+        // Creating Object instance
+        var student=new Object();
+        student.fname="Bishwo";
+        student.lname="Subedi";
+        student.roll=13;
+        for(value in student){
+            document.writeln(student[value])
+        }
+        document.write("<br>")
+        // Creating an object using constructor
+    function student(roll,fname,lname)
+    {
+        this.roll=roll;
+        this.fname=fname;
+        this.lname=lname;
+    }
+    var stu=new student(3,"Bishwo","Subedi");
+    for(key in stu){
+        document.writeln(stu[key]+" ")
+    }
+    </script>
+</body>
+</html>

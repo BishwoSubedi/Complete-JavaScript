@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>This is JavaScript Prototype</h2>
+    <script>
+        function stu(fname,lname){
+            this.fname=fname;
+            this.lname=lname;
+        }
+        stu.prototype.fullname=function(){
+            return this.fname+" "+this.lname;
+        }
+        var stu1=new stu('Bishwo','Subedi')
+        document.writeln(stu1.fullname()+"<br>")
+    </script>
+</body>
+</html>

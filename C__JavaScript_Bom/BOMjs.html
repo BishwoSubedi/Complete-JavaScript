@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Object Model(BOM)</title>
+</head>
+<body>
+    <h3>This is alert method</h3>
+    <input type="button" onclick='message()' value="click here">
+    <br>
+    <br>
+    <br>
+    <h3>This is confirm method</h3>
+    <input type="button" onclick='Confirm()' value="Click here to confirm">
+   
+    <br>
+    <br>
+    <br>
+    <h3>This is prompt method</h3>  <!--it displays th dialog box and get input from the user-->
+    <input type="button" onclick='prmpt()' value="Click here">
+   
+    <br>
+    <br>
+    <br>
+    <h3>This is Open method</h3>  <!--it open a new window when clicked-->
+    <input type="button" onclick='opn()' value="Click here to naviagate into google">
+   
+    <script>
+        //window object methods
+        //1.alert()
+        function message()
+        {
+            alert("Button clicked");
+        }
+        
+   function Confirm(){
+    var x= confirm("Are u sure ?")
+    if(x==true){
+        alert('Clicked ok')
+    }
+    else{
+        alert("Cancelled By user")
+    }
+   }
+
+   function prmpt(){
+    var temp=prompt("What is your name ? ");
+    alert("User Name is : "+temp)
+   }
+   setTimeout(
+   function opn(){
+    open('https://www.google.com')
+   },2000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="setcookie" onclick="setcokie">
+    <input type="button" value="getcookie" onclick="getcokie">
+    <script>
+     //A  Cookie is an amount of information that persist between a server-side and a client-side.
+     //A web browser stores this information at the time of browsing.
+     //Whenever a user sends a request to the server, the cookie is added with that request automatically.Due to cookie,the server recognizes the users.
+     function setcokie(){
+        document.cookie='Bishwo' //it only runs on server so use XAMP server
+     }
+     function getcokie(){
+        if(document.cookie.length!=0){
+            alert(document.cookie)
+        }
+        else{
+            alert("Cookie not available")
+        }
+     }
+    </script>
+</body>
+</html>

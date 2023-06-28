@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM </title>
+</head>
+<body>
+<!-- Document object model is used to make pages dynamic.It is very important to learn for websites developer -->
+    <h3>This is javascript DOM example</h3>
+    <form name="frm1">
+        Enter Your Name: <input type="text" name="name">
+        <input type="button" value="Click Here" onclick="show()">
+    </form>    
+    <script>
+        function show(){
+            var x= document.frm1.name.value;
+            alert("Welcome : " +x)
+        }
+    </script>
+</body>
+</html>

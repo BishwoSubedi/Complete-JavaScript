@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript Redirect</h2>
+    <h3>Click the button to redirect to Google...</h3>
+    <h4>Example of window.location.href</h4>
+      <p>Wait for 5sec</p>
+      <br> <br> <br>
+    <h2>JavaScript Redirect</h2>
+    <h3>Click the button to redirect to Google...</h3>
+    <h4>Example of window.location.replace</h4>
+     <input type="button" value="Redirect" onclick="redirect()">
+    <script>
+     //Redirect is nothing it is just a mechanism of sending search engines and users on a different url from original one.
+     //Sometimes when we checked url,we directed to another url,it happens because of the page redirect
+     function direct()
+     {
+        window.location.replace('https://www.google.com')
+     }
+     setTimeout('direct()',5000)
+     function redirect(){
+        window.location.href='https://www.google.com'
+
+     }
+    </script>
+</body>
+
+</html>

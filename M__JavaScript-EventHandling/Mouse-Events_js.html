@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rect{
+            width: 70px;
+            height: 70px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Mouse Event Examples</h1>
+    <br>
+            <h2>Onclick Event Example</h2>
+    <input type="button" value="Change Background" onclick="ChangeBack()">
+    <br><br>
+    <h2>OnMouseover Example</h2>
+    <div class="rect" onmouseover="MouseOver()" onmouseout="MouseOut()" onmousedown="MouseDown()"></div>
+    <script>
+        function ChangeBack(){
+            document.body.style.background ='grey';
+        }
+        function MouseOver(){
+           document. body.style.background='green'
+        }
+        function MouseOut(){
+           document. body.style.background='white'
+        }
+        function MouseDown(){
+         alert("Mouse Down Event Fire")
+        }
+    </script>
+</body>
+</html>

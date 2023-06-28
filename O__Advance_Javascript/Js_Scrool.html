@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #scrollable{
+            height: 100px;
+            width: 150px;
+            background-color: aliceblue;
+            overflow: scroll;
+            border: 1px solid black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>JavaScript Scroll</h2>
+    <p>Scroll Please</p>
+    <div id="scrollable" onscroll="Scroll()">
+        Hello, <br> <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, dolorem maiores! Nostrum doloribus sapiente
+        amet obcaecati esse voluptate cumque laudantium natus, incidunt molestiae neque consectetur.
+    </div>
+    <script>
+        function Scroll(){
+       document.getElementById('scrollable').style.color="blue";
+       document.getElementById('scrollable').style.background="green";
+        }
+    </script>
+</body>
+
+</html>

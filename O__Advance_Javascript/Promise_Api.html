@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is promise API</h1>
+</body>
+<script>
+    Promise.all([
+   new Promise(resolve=> setTimeout(resolve(1),3000)),
+   new Promise(reject=> setTimeout(reject(new Error("It's an Error")),4000)),
+   new Promise(resolve=> setTimeout(resolve(3),1000)),
+    ]).then(alert)
+  //promise.any
+  //promise.race
+</script>
+</html>

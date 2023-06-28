@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Those variables which are defined inside the scope are called local variabes.For eg:
+        function Bishwo(){
+            var a=10;//this is local variable
+            document.write(a)
+        }
+        Bishwo();//function Calling
+        //Those variables which are defined outside the scope and can be use all over the program are called global variabes.For eg:
+        var b=10;
+        function anand(){
+            document.write(b);//We can use variable b inside the scope because this is global variable.
+        }
+    </script>
+</body>
+</html>

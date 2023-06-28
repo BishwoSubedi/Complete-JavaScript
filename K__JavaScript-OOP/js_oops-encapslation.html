@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is JavaScript OOP Encapsulation</h1>
+    <script>
+        //Js encapsulation is a process of binding data with a function actiong on a data
+        //we use getter and setter method for encapsulation
+        class student{
+            constructor (){
+                var roll;
+                var name;
+            }
+            getRoll(){
+                return this.roll;
+            }
+            setRoll(roll){
+                this.roll=roll;
+            }
+            getName(){
+                return this.name;
+            }
+            setName(name){
+                this.name=name;
+            }
+        }
+        var stu=new student();
+        stu.setRoll(13);
+        stu.setName('Bishwo ');
+        document.writeln(stu.getName() + "Roll No is: "+stu.getRoll())
+    </script>
+</body>
+</html>

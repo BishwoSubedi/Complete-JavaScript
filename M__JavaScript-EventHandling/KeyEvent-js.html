@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            border: 2px solid red;
+            border-radius: 100px;
+            height: 60px;
+            width: 50px;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Keyboard Event Example</h1>
+    <!-- keyboard events only works with input feild -->
+    <input type="text" onkeydown="KeyDown()" onkeyup="KeyUp()">
+    <!-- <div class="circle"></div> -->
+   <script>
+     function KeyDown(){
+        document.body.style.background='black'
+     }
+     function KeyUp(){
+        document.body.style.background='white'
+
+     }
+   </script>
+</body>
+</html>

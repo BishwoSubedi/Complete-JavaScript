@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method</title>
+</head>
+<body>
+    <script>
+   //1.charAt()-returns position of string
+   //2.concat()-it combines two or more string
+   //3.indexof()-it provides the position of char value in string
+   //4.search()-it searches specified regular expression in the string
+   //5.match()-it searches specified regular expression in the string and returns that regular expression
+   //6.replace()
+   //7.substring()
+   //8.slice()-it is used to fetch the part of given string.
+   //9.toLowerCase()
+   //10.toUpperCase()
+   //11.toString()
+   //12.split()
+   //13.trim()-it trims the whitespace from the left and right side of string
+
+
+   document.writeln("<h2>String Method concat(): </h2>")
+   var str1="How Are You "
+   var str2=" Hency ?"
+   document.writeln(str1.concat(str2));
+
+   document.writeln("<h2>String Method search(): </h2>")
+   var str3="We are Learning javascript .Javascript is wonderful language"
+   document.writeln("Check wheather javascript exist in String : "+ str3.search('javascript'));
+   
+   document.writeln("<h2>String Method replace(): </h2>")
+   var str4="We are Learning javascript .Javascript is wonderful language"
+   document.writeln("Replacing Globally : "+ str4.replace(/javascript/g,'HTML'));
+
+    </script>
+</body>
+</html>

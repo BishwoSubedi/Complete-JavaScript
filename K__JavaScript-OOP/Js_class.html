@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is JavaScript Class Example</h1>
+    <script>
+        //declaring the class
+        class student{
+            //initializing object
+            constructor(roll,name){
+                this.roll=roll;
+                this.name=name;
+            }
+            //Declaring Methods
+            details(){
+                document.write(this.roll+" " + this.name + " "+ "<br>")
+            }
+        }
+        object1=new student(13,'Bishwo');
+        object2=new student(14,'Bisal');
+        object1.details();
+        object2.details();
+
+        //Characterstics of JS Class
+        //Hoisting not supported
+        //Redeclaration not supported
+    </script>
+</body>
+</html>

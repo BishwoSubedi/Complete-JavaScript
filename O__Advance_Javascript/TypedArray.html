@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Javascript Advance Typd Array</h1> 
+   <script>
+    //typed array is not same as Array it is Array object
+    document.write('Example CopyWithin');
+    var arr=[1,2,3,4,5,6,7,8,9,10]
+    arr.copyWithin(2,3);
+    document.writeln(arr);
+    //entries()
+    //fill()
+    //find()
+    //finindex()
+    //forEach()
+    //includes()
+    //join()
+    //keys()
+    //reduce()
+    document.write('<br> <br>');
+    document.write('Example reduce');
+    var arr1=[10,20,30,39]
+    var result=arr1.reduce(function(passesItemm,Item){
+        return passesItemm+Item;
+    },0)
+    document.writeln('sum of the array elements is : '+result)
+    //set()
+   </script>
+</body>
+</html>

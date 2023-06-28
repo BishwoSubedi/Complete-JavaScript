@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Validation Example</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Registration Form</h1>
+    <form style="text-align: center; margin-top: 10px;" name="myfrm" method="post" onsubmit="return Validateform()">
+        Enter your Name: <input style="text-align: center;" type="text" name="uname" placeholder="Name">
+        <br> <br>
+        Enter Your Password: <input type="password" style="text-align: center;" name="pwd" placeholder="Password" >
+        <br><br>
+        Enter Your Password: <input type="password" style="text-align: center;" name="cpwd" placeholder="Confirm Password" >
+        <br> <br>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        function Validateform(){
+            var name=document.myfrm.uname.value;
+            var password=document.myfrm.pwd.value;
+            var confirm=document.myfrm.cpwd.value;
+            if(name == null || name == ""){
+             alert('Please Enter Name')
+             return false;
+            }
+            else if(password.length<6){
+                alert("Password Must be at least 6 character")
+                return false;
+            }
+            else if(password!=confirm){
+                alert("Password Must be same")
+                return false;
+            }
+            else
+            {
+               open('https://www.google.com')
+            }
+        }
+    </script>
+</body>
+</html>

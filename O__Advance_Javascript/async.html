@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async </h1>
+    <p id="doc"></p>
+    <script>
+       
+       //There is a special syntax to work with promises in more comfortable fashion is called async/await
+       function show(value){
+        document.getElementById('doc').innerHTML=value;
+       }
+      async function Myfunc(){
+        return 'Hello World';
+       }
+       Myfunc().then(
+        function(value){show(value)},
+        function(error){show(error)}
+       )
+    </script>
+</body>
+</html>

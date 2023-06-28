@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Method</title>
+</head>
+<body>
+    <script>
+        var d1=new Date();
+        switch(d1.getDay()){
+            case 0:
+                day='Sunday';
+                break
+            case 1:
+                day='Monday';
+                break;
+            case 2:
+                day='TuesDay';
+                break;
+            case 3:
+                day='Wednesday';
+                break;
+            case 4:
+                day='Thrusday';
+                break;
+            case 5:
+                day='Friday';
+                break;
+            case 6:
+                day='saturday';
+                break;
+        }
+        //getDate(),getDay(),getFullyears,getHours(),getMillisecond()
+        //toDateString
+        //toString
+        //toTimeString
+        document.writeln('Today is :' + day +"<br>");
+        document.writeln('Today is :' + d1.getDate()+"<br>");
+        document.writeln('Today is :' + d1.getUTCFullYear()+"<br>");
+        document.writeln('Today is :' + d1.getMonth()+"<br>");
+        document.writeln('Today is :' + d1.getHours()+"<br>");
+        document.writeln('Today is :' + d1.getMinutes()+"<br>");
+
+    </script>
+</body>
+</html>

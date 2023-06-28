@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model Method</title>
+</head>
+<body>
+    <h3>This is document.getElementById Example</h3>
+    <form >
+        Enter Your Number: <input type="text" id="contact">
+        <br> <br>
+        <input type="button" value="Click Here" onclick="ShowNum()">
+    </form>
+    <br>
+    <br>
+    <br>
+    <h3>This is document.getElementByClassName() Example</h3>
+    <div class="awe">This is Class</div>
+    <br>
+    <br>
+    <h3>This is document.getElementsByName() Example</h3>
+    <form >
+        Male: <input type="radio" name="gender" value="male">
+        Female: <input type="radio" name="gender" value="female">
+        <br><br>
+        <input type="button" value="show no. of gender" onclick="showgen()">
+    </form>
+    
+    <script>
+   function ShowNum(){
+    var temp=document.getElementById('contact').value;
+    alert('Your Contact No: '+temp)
+   } 
+  var x= document.getElementsByClassName('awe');
+  alert(x[0].innerText);
+
+
+  function showgen(){
+    var temp=document.getElementsByName('gender')
+    alert('Total gender :'+temp.length)
+  }
+    //   document.getElementsByTagName('p')
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>AddEventListner</h1>
+    <button id="Clickbtn">Click Me</button>
+    <p id="para"></p>
+    <script>
+        //addEventListener() method is used to attach an element handler to a particular element.
+        //addEventListener() method is an inbuilt function of javascript
+        //syntax
+        //element.addEventListener(event,function,useCapture)
+        document.getElementById("Clickbtn").addEventListener("click",changeBack)
+        document.getElementById("Clickbtn").addEventListener("click",Update)
+        function changeBack(){
+            document.body.style.background='blue';
+        }
+        function Update(){
+            document.getElementById("para").innerHTML="Welcome, You can Learn Javascript here"
+        }
+    </script>
+</body>
+</html>
